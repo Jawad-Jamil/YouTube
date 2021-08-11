@@ -37,22 +37,22 @@ let channel_list = [
 ]
 
 let channel_logo = [
-    "/Channels/somoy tv.jpg",
-    "/Channels/Thikana Tv.press.jpg",
-    "/Channels/Abu Taw Haa Muhammad Adnan.jpg",
-    "/Channels/Jaima noor.jpg",
-    "/Channels/akib.jpg",
-    "/Channels/Jaima noor.jpg",
-    "/Channels/akib.jpg",
-    "/Channels/mizanur rahman azhari.jpg",
-    "/Channels/mizanur rahman azhari.jpg",
-    "/Channels/akib.jpg",
-    "/Channels/Madina tv.jpg",
-    "/Channels/Dr. Shafiqul Islam.jpg",
-    "/Channels/saimum.jpg",
-    "/Channels/akib.jpg",
-    "/Channels/samZone.jpg",
-    "/Channels/Panvision tv.jpg",
+    "somoy tv.jpg",
+    "Thikana Tv.press.jpg",
+    "Abu Taw Haa Muhammad Adnan.jpg",
+    "Jaima noor.jpg",
+    "akib.jpg",
+    "Jaima noor.jpg",
+    "akib.jpg",
+    "mizanur rahman azhari.jpg",
+    "mizanur rahman azhari.jpg",
+    "akib.jpg",
+    "Madina tv.jpg",
+    "Dr. Shafiqul Islam.jpg",
+    "saimum.jpg",
+    "akib.jpg",
+    "samZone.jpg",
+    "Panvision tv.jpg",
 ]
 
 
@@ -124,11 +124,11 @@ for (let index = 0; index < 16; index++) {
     
     <div class='thumb_vid_wrapper'>
     <div class='thumb_wrapper'>
-        <img class="thumbnail" src="/thumbs_and_videos/Video-${index+1}/thumb.jpg">
+        <img class="thumbnail" src="thumbs_and_videos/Video-${index+1}/thumb.jpg">
     </div>
 
     <div class='title_wrapper'>
-        <div class='left_channel'><img class='profile_pic' src='${channel_logo[index]}'></div>
+        <div class='left_channel'><img class='profile_pic' src='Channels/${channel_logo[index]}'></div>
 
         <div class='right_title'>
             <div class='right_top_title'> ${titles[index]}</div>
