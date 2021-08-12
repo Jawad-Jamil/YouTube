@@ -116,4 +116,11 @@
     .play_page_container {
         width: 300px;
     }
+
+    .play_page_left {
+        position: sticky;
+        top: 58px;
+        z-index: 99;
+        background: var(--mainbg);
+    }
 }
