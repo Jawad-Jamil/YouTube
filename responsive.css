@@ -3,7 +3,13 @@
     .thumb_vid_wrapper{
         width: 33.33333333333%;
     }
+
+    .content_part {
+        padding-left: 60px !important;
+    }
 }
+
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
@@ -14,18 +20,20 @@
     .profile_wrapper{
         width: unset;
     }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {
-
-} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+    .play_page_left{
+        margin: 0 auto;
+    }
+    
     .thumb_vid_wrapper {
         width: 50%;
     }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
     
     .left_menu_wrapper{
         display: none;
@@ -39,6 +47,18 @@
         display: none;
     }
 
+    .play_page_left{
+        width: 85%;
+    }
+
+    .play_page_right{
+        width: 85%;
+    }
+
+    .play_page_right .thumb_vid_wrapper {
+        width: 85%;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -47,12 +67,12 @@
         display: none;
     }
 
-    i.up_video , i.notification{
-        display: unset;
+    i.header_right_search{
+        display: inline-block;
     }
 
-    i.notification::before{
-        content: "\f002";
+    i.up_video , i.notification{
+        display: unset;
     }
 
     .profile_wrapper{
@@ -63,15 +83,37 @@
         width: 100%;
     }
 
+    .user_profile{
+        display: none;
+    }
+
+    .play_page_left{
+        width: 100%;
+    }
+
+    .play_page_right{
+        width: 100%;
+    }
+
+    .play_page_right .thumb_vid_wrapper {
+        width: 100%;
+    }
+
+    .content_part{
+        padding: 10px !important;
+    }
+
+    .subscribe_wrapper img{
+        width: 180px;
+    }
+
+
 }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 600px) {
-
-}
-
 
 /* Very small devices (phones, 320px and down) */
 @media only screen and (max-width: 320px) {
 
+    .play_page_container {
+        width: 300px;
+    }
 }
