@@ -136,7 +136,7 @@ let video_details = [
 
 
     [
-    "শিশুদের কুরবানী ঈদের নতুন নাশীদ ইসমাঈলের কুরবানী Ismailer Kurbani Jaima Saifa",
+    "শিশুদের কুরবানী ঈদের নতুন নাশীদ ইসমাঈলের কুরবানী Ismailer Kurbani Jaima",
     "Panvision tv",
     "3.7M",
     "7 days",
@@ -194,6 +194,10 @@ let content_part = document.querySelector(".content_part")
 let yt_home_logo = document.getElementById("youtube_home_logo")
 let video_thumb = document.querySelectorAll(".thumb_vid_wrapper")
 let left_menu_wrapper = document.querySelector(".left_menu_wrapper")
+let tab_title = document.querySelector("#tab_title")
+let play_part = document.querySelector(".play_part")
+let main_part = document.querySelector(".main_part")
+let header = document.querySelector("header")
 
 
 // When the user clicks on the button, scroll to the top of the document
@@ -203,16 +207,21 @@ function topFunction() {
 }
 
 video_thumb.forEach( (number,i) => {
-    
+
     number.addEventListener('click', ()=> {
-        let tab_title = document.querySelector("#tab_title")
         tab_title.innerHTML = video_details[i][0]
         topFunction()
         left_menu_wrapper.style.display = "none"
-        content_part.style.padding = "20px 40px"
-        content_part.style.margin = "0"
-
-        content_part.innerHTML = `
+        main_part.setAttribute("style","padding: 25px 40px;")
+        content_part.classList.add("content_when_played")
+        
+        header.setAttribute("style","padding-left: 30px;")
+        header.innerHTML +=`
+        <div class="back_btn">
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+        `
+        play_part.innerHTML = `
     <div class="play_page_container">
 
         <div class="play_page_left">
@@ -277,54 +286,8 @@ video_thumb.forEach( (number,i) => {
             </div>
     
         </div>
-    
-        <div class="play_page_right"></div>
       
     </div>  `
-
-
-// for Play Right Elements!!
-// for Play Right Elements!!
-// for Play Right Elements!!
-// for Play Right Elements!!
-// for Play Right Elements!!
-// for Play Right Elements!!
-    for (let inde = 0; inde < 16; inde++) {
-        
-        let play_page_right = document.querySelector(".play_page_right")
-        
-        play_page_right.innerHTML += `
-        <div class='thumb_vid_wrapper play_page_right_thumb'>
-        <div class='thumb_wrapper'>
-            <img class="thumbnail" src="thumbs_and_videos/Video-${inde+1}/thumb.jpg">
-        </div>
-        
-        <div class='title_wrapper'>
-            <div class='left_channel'><img class='profile_pic' src='Channels/${video_details[inde][1]}.jpg'></div>
-        
-            <div class='right_title'>
-                <div class='right_top_title'> ${video_details[inde][0]}</div>
-        
-                <div class='right_chnl_title'>
-                    <div class='chnl_name'>
-                        <h6> ${video_details[inde][1]}</h6>
-                        <i class='fas fa-check-circle'></i>
-                    </div>
-        
-                    <div class='right_time_title'><span>${video_details[inde][2]} views</span> <span class="point"><i class='fas fa-circle'></i></span> <span>${video_details[inde][3]} ago</span></div>
-                </div>
-        
-            </div>
-        </div>
-        </div>
-        `       
-        }
-// for Play Right Elements!!
-// for Play Right Elements!!
-// for Play Right Elements!!
-// for Play Right Elements!!
-// for Play Right Elements!!
-// for Play Right Elements!!
 
 
         let like = document.querySelector("#like")
@@ -378,7 +341,9 @@ video_thumb.forEach( (number,i) => {
 
 })
 
+let back_btn = document.querySelector(".back_btn")
 
 yt_home_logo.addEventListener("click", function() {
     videoTag.src = "#"
+    // tab_title.innerHTML = "YouTube"
 });
