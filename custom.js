@@ -170,7 +170,7 @@ for (let index = 0; index < video_details.length; index++) {
                     <i class='fas fa-check-circle'></i>
                 </div>
 
-                <div class='right_time_title'><span>${video_details[index][2]} views</span> <span style ="font-size: 3px !important; padding: 0px 5px;"><i class='fas fa-circle'></i></span> <span>${video_details[index][3]} ago</span></div>
+                <div class='right_time_title'><span>${video_details[index][2]} views</span> <span class="point" style ="font-size: 4px !important; padding: 0px 5px;"><i class='fas fa-circle'></i></span> <span>${video_details[index][3]} ago</span></div>
             </div>
 
         </div>
@@ -234,7 +234,7 @@ video_thumb.forEach( (number,i) => {
                 <div class="video_heading"><h3>${video_details[i][0]}</h3></div>
                 <div class="video_options_wrapper">
     
-                    <div class="right_time_title"><span>${video_details[i][2]} views</span> <span class="point"><i class='fas fa-circle'></i></span> <span>${video_details[i][3]} ago</span></div>
+                    <div class="right_time_title"><span>${video_details[i][2]} views</span> <span class="point" style ="font-size: 4px !important; padding: 0px 5px;"><i class='fas fa-circle'></i></span> <span>${video_details[i][3]} ago</span></div>
                     <div class="video_react">
     
                         <div class="reactions">
