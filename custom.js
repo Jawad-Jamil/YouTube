@@ -203,8 +203,10 @@ function topFunction() {
 }
 
 video_thumb.forEach( (number,i) => {
-
+    
     number.addEventListener('click', ()=> {
+        let tab_title = document.querySelector("#tab_title")
+        tab_title.innerHTML = video_details[i][0]
         topFunction()
         left_menu_wrapper.style.display = "none"
         content_part.style.padding = "20px 40px"
