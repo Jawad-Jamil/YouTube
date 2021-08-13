@@ -170,7 +170,7 @@ for (let index = 0; index < video_details.length; index++) {
                     <i class='fas fa-check-circle'></i>
                 </div>
 
-                <div class='right_time_title'><span>${video_details[index][2]} views</span> <span class="point"><i class='fas fa-circle'></i></span> <span>${video_details[index][3]} ago</span></div>
+                <div class='right_time_title'><span>${video_details[index][2]} views</span> <span style ="font-size: 3px !important; padding: 0px 5px;"><i class='fas fa-circle'></i></span> <span>${video_details[index][3]} ago</span></div>
             </div>
 
         </div>
