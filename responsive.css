@@ -107,12 +107,11 @@
         width: 180px;
     }
 
-    .vid_with_title_wrapper {
-        position: fixed;
+    .play_page_left {
+        position: sticky;
         top: 58px;
         z-index: 99;
         background: var(--mainbg);
-        padding-top: 10px;
     }
 
 
