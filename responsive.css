@@ -108,7 +108,7 @@
     }
 
     .vid_with_title_wrapper {
-        position: sticky;
+        position: fixed;
         top: 58px;
         z-index: 99;
         background: var(--mainbg);
