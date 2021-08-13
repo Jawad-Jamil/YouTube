@@ -130,6 +130,14 @@
         padding: 10px !important;
     }
 
+    .back_btn{
+        display: inline-block !important;
+    }
+
+    .header{
+        padding-left: 30px;
+    }
+
 }
 
 /* Very small devices (phones, 320px and down) */

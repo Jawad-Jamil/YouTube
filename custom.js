@@ -170,7 +170,7 @@ for (let index = 0; index < video_details.length; index++) {
                     <i class='fas fa-check-circle'></i>
                 </div>
 
-                <div class='right_time_title'><span>${video_details[index][2]} views</span> <span ><i style ="font-size: 4px !important; padding: 0px 5px;" class='point fas fa-circle'></i></span> <span>${video_details[index][3]} ago</span></div>
+                <div class='right_time_title'><span>${video_details[index][2]} views</span> <span class="point" style ="font-size: 4px !important; padding: 0px 5px;"><i class='fas fa-circle'></i></span> <span>${video_details[index][3]} ago</span></div>
             </div>
 
         </div>
@@ -206,6 +206,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+
 video_thumb.forEach( (number,i) => {
 
     number.addEventListener('click', ()=> {
@@ -214,11 +215,10 @@ video_thumb.forEach( (number,i) => {
         left_menu_wrapper.style.display = "none"
         main_part.setAttribute("style","padding: 25px 40px;")
         content_part.classList.add("content_when_played")
-
-        header.setAttribute("style","padding-left: 30px;")
+        
         header.innerHTML +=`
-        <div class="back_btn">
-            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        <div>
+            <a class="back_btn" href="index.html"><i class="fas fa-arrow-left"></i></a>
         </div>
         `
         play_part.innerHTML = `
@@ -234,7 +234,7 @@ video_thumb.forEach( (number,i) => {
                 <div class="video_heading"><h3>${video_details[i][0]}</h3></div>
                 <div class="video_options_wrapper">
     
-                    <div class="right_time_title"><span>${video_details[i][2]} views</span> <span><i style ="font-size: 4px !important; padding: 0px 5px;" class='point fas fa-circle'></i></span> <span>${video_details[i][3]} ago</span></div>
+                    <div class="right_time_title"><span>${video_details[i][2]} views</span> <span class="point" style ="font-size: 4px !important; padding: 0px 5px;"><i class='fas fa-circle'></i></span> <span>${video_details[i][3]} ago</span></div>
                     <div class="video_react">
     
                         <div class="reactions">
@@ -301,7 +301,6 @@ video_thumb.forEach( (number,i) => {
         
         let unlike_link = "https://img.icons8.com/material-sharp/24/000000/thumbs-down.png"
         let removed_unlike_link = "https://img.icons8.com/material-outlined/24/000000/thumbs-down.png"
-
 
     
         like.addEventListener("click", function() {
