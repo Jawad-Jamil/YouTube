@@ -128,7 +128,7 @@ let video_details = [
 
     [
     "২০ থেকে ২৫ হাজারে সেরা ৫ টি স্মার্টফোন - Best Phones in 20k-25k",
-    "samZone",
+    "Sohag360",
     "582K",
     "9 months",
     "https://drive.google.com/file/d/1ef9xNHsNPzrb3lhoBc5QG1fJrw4o9zQi/preview",
@@ -214,7 +214,7 @@ video_thumb.forEach( (number,i) => {
         left_menu_wrapper.style.display = "none"
         main_part.setAttribute("style","padding: 25px 40px;")
         content_part.classList.add("content_when_played")
-        
+
         header.setAttribute("style","padding-left: 30px;")
         header.innerHTML +=`
         <div class="back_btn">
