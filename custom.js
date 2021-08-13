@@ -196,10 +196,16 @@ let video_thumb = document.querySelectorAll(".thumb_vid_wrapper")
 let left_menu_wrapper = document.querySelector(".left_menu_wrapper")
 
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 video_thumb.forEach( (number,i) => {
 
     number.addEventListener('click', ()=> {
-
+        topFunction()
         left_menu_wrapper.style.display = "none"
         content_part.style.padding = "20px 40px"
         content_part.style.margin = "0"
