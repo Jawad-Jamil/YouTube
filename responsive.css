@@ -106,14 +106,15 @@
     .subscribe_wrapper img{
         width: 180px;
     }
-    
-    
-    .play_page_left {
+
+    .vid_with_title_wrapper {
         position: sticky;
         top: 58px;
         z-index: 99;
         background: var(--mainbg);
+        padding-top: 10px;
     }
+
 
 }
 
@@ -123,5 +124,4 @@
     .play_page_container {
         width: 300px;
     }
-    
 }
