@@ -107,13 +107,6 @@
         width: 180px;
     }
 
-    .play_page_left {
-        position: sticky;
-        top: 58px;
-        z-index: 99;
-        background: var(--mainbg);
-    }
-
 
 }
 
