@@ -302,7 +302,7 @@ i.left_bar{
 }
 
 span.point{
-    font-size: 3px;
+    font-size: 3px !important;
     padding: 0px 5px;
 }
 
