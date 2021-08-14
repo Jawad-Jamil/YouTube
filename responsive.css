@@ -62,11 +62,11 @@
     }
 
     .play_video_wrapper {
-        width: 96.5%;
+        width: 95%;
         top: 58px;
         position: fixed;
         padding-top: 10px;
-        background-color: var(--soft_black);;
+        background-color: var(--mainbg);
         z-index: 100;
     }
     
