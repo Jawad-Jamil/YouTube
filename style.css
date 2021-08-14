@@ -480,6 +480,6 @@ img#like , img#unlike{
 }
 
 .back_btn{
-    display: inline-block ;
+    display: none;
     margin-top: -5px;
 }
