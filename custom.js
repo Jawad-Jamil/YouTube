@@ -316,7 +316,7 @@ video_thumb.forEach( (number,i) => {
     
                 
                 <div class="subscribe_wrapper">
-                    <img src= "https://helpdeskgeek.com/wp-content/pictures/2019/09/5-YouTube-Channels-Every-Serious-Tech-Fan-Should-Subscribe-To-Title-Image.jpg.optimal.jpg">
+                    <img src= "subscribe.png">
                 </div>
     
             </div>
