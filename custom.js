@@ -235,6 +235,7 @@ let play_part = document.querySelector(".play_part")
 let main_part = document.querySelector(".main_part")
 let back_btn = document.querySelector(".back_btn")
 let header_bar = document.querySelector(".header_bar")
+let bars_div = document.querySelector(".bars_div")
 
 
 // When the user clicks on the button, scroll to the top of the document
@@ -254,6 +255,7 @@ video_thumb.forEach( (number,i) => {
         content_part.classList.add("content_when_played")
         header_bar.style.display = "none";
         back_btn.style.display = "inline-block";
+        bars_div.style.marginTop = -5px;
         
         play_part.innerHTML = `
     <div class="play_page_container">
