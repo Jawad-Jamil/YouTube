@@ -252,11 +252,8 @@ video_thumb.forEach( (number,i) => {
         main_part.setAttribute("style","padding: 25px 40px;")
         content_part.classList.add("content_when_played")
         
-        header.innerHTML +=`
-        <div>
-            <a class="back_btn" href="index.html"><i class="fas fa-arrow-left"></i></a>
-        </div>
-        `
+        header.innerHTML = `<div><a class="back_btn" href="index.html"><i class="fas fa-arrow-left"></i></a></div>` + header.innerHTML;
+        
         play_part.innerHTML = `
     <div class="play_page_container">
 
