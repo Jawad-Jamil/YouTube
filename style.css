@@ -481,7 +481,7 @@ img#like , img#unlike{
 
 .back_btn{
     display: inline-block ;
-    position: absolute;
+/*     position: absolute;
     top: 15px;
-    left: 10px;
+    left: 10px; */
 }
