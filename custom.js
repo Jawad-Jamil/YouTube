@@ -234,6 +234,7 @@ let tab_title = document.querySelector("#tab_title")
 let play_part = document.querySelector(".play_part")
 let main_part = document.querySelector(".main_part")
 let back_btn = document.querySelector(".back_btn")
+let header_bar = document.querySelector(".header_bar")
 
 
 // When the user clicks on the button, scroll to the top of the document
