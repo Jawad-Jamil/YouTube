@@ -373,8 +373,6 @@ video_thumb.forEach( (number,i) => {
 
 })
 
-let back_btn = document.querySelector(".back_btn")
-
 yt_home_logo.addEventListener("click", function() {
     videoTag.src = "#"
     // tab_title.innerHTML = "YouTube"
