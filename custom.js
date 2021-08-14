@@ -233,7 +233,7 @@ let left_menu_wrapper = document.querySelector(".left_menu_wrapper")
 let tab_title = document.querySelector("#tab_title")
 let play_part = document.querySelector(".play_part")
 let main_part = document.querySelector(".main_part")
-let header = document.querySelector("header")
+let back_btn = document.querySelector(".back_btn")
 
 
 // When the user clicks on the button, scroll to the top of the document
@@ -251,8 +251,8 @@ video_thumb.forEach( (number,i) => {
         left_menu_wrapper.style.display = "none"
         main_part.setAttribute("style","padding: 25px 40px;")
         content_part.classList.add("content_when_played")
-        
-        header.innerHTML = `<div><a class="back_btn" href="index.html"><i class="fas fa-arrow-left"></i></a></div>` + header.innerHTML;
+        header_bar.style.display = "none";
+        back_btn.style.display = "inline-block";
         
         play_part.innerHTML = `
     <div class="play_page_container">
