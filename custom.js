@@ -255,7 +255,7 @@ video_thumb.forEach( (number,i) => {
         content_part.classList.add("content_when_played")
         header_bar.style.display = "none";
         back_btn.style.display = "inline-block";
-        bars_div.style.marginTop = -5px;
+        bars_div.style.paddingTop = 5px;
         
         play_part.innerHTML = `
     <div class="play_page_container">
