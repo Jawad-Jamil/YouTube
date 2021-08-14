@@ -141,9 +141,34 @@ let video_details = [
     "3.7M",
     "7 days",
     "https://drive.google.com/file/d/1Z4LIiQsux5uu1Dhi3Q3ClbjXilSqOFzL/preview",
+    ],
+    
+    
+    [
+    "বাইয়াত নিয়ে জাগরণী গান Bayat Song বায়াত Saimum 2021 সাইমুম",
+    "saimum shilpogosthi",
+    "473K",
+    "8 months",
+    "https://drive.google.com/file/d/1zAvQhkHeRqZwi4O7qSUTqH1J2c3h6XNh/preview",
+    ],
+    
+
+    [
+    "মতিউর রহমান মল্লিকের জনপ্রিয় নাশীদ আশাহত হয়ো নাকো তুমি | Jaima Noor",
+    "Panvision tv",
+    "37K",
+    "12 days",
+    "https://drive.google.com/file/d/1qdOdoHM2l133TlrIGbdxr0BuseQ8pzhn/preview",
+    ],
+    
+
+    [
+    "Mobile Network Booster - এখন সব জায়গায় নেটওয়ার্ক থাকবে!",
+    "Sohag360",
+    "142K",
+    "5 weeks",
+    "https://drive.google.com/file/d/17grbro1SgG3pBBfvP8N-f9-vG6_UE__f/preview",
     ]
-
-
 ]
 
 
