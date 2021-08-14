@@ -55,6 +55,22 @@
         width: 85%;
         margin: 0 auto;
     }
+    
+    
+    .video_title {
+        margin-top: 62%;
+    }
+
+    .play_video_wrapper {
+        width: 96.5%;
+        top: 58px;
+        position: fixed;
+        padding-top: 10px;
+        background-color: var(--soft_black);;
+        z-index: 100;
+    }
+    
+    
 }
 
 
