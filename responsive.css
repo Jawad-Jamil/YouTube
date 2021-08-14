@@ -87,6 +87,10 @@
     i.header_right_search{
         display: inline-block;
     }
+    
+    a.header_bar {
+    display: none;
+    }
 
     i.up_video , i.notification{
         display: unset;
