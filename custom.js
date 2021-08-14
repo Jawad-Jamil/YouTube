@@ -168,7 +168,18 @@ let video_details = [
     "142K",
     "5 weeks",
     "https://drive.google.com/file/d/17grbro1SgG3pBBfvP8N-f9-vG6_UE__f/preview",
+    ],
+    
+    
+    [
+    "How smartphones are made in Bangladesh? - A Factory Tour",
+    "Sohag360",
+    "441K",
+    "1 month",
+    "https://drive.google.com/file/d/1aKgaf1WeireF8X-ZGr25VdHlNWkMRQkM/preview",
     ]
+    
+    
 ]
 
 
