@@ -190,7 +190,7 @@ for (let index = 0; index < video_details.length; index++) {
     
     <div class='thumb_vid_wrapper'>
     <div class='thumb_wrapper'>
-        <img class="thumbnail" src="thumbnails/thumb${index+1}.jpg">
+        <img class="thumbnail" src="thumbs_and_videos/Video-${index+1}/Thumb.jpg">
     </div>
 
     <div class='title_wrapper'>
