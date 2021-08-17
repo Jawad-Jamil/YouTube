@@ -190,7 +190,7 @@ for (let index = 0; index < video_details.length; index++) {
     
     <div class='thumb_vid_wrapper'>
     <div class='thumb_wrapper'>
-        <img class="thumbnail" src="thumbs_and_videos/Video-${index+1}/Thumb.jpg">
+        <img class="thumbnail" src="thumbnails/thumb${index+1}.jpg">
     </div>
 
     <div class='title_wrapper'>
@@ -223,7 +223,7 @@ for (let i = 0; i < 9; i++) {
     `
 }
 
-
+let videoTag = document.querySelector("#videos")
 let content_part = document.querySelector(".content_part")
 let yt_home_logo = document.getElementById("youtube_home_logo")
 let video_thumb = document.querySelectorAll(".thumb_vid_wrapper")
@@ -261,37 +261,8 @@ video_thumb.forEach( (number,i) => {
         <div class="play_page_left">
     
             <div class="play_video_wrapper">
-                <video  onclick="PlayPause()" id="videos" src="thumbs_and_videos/Video-${i+1}/video.mp4" allowfullscreen autoplay></video>
-                <div onclick="PlayPause()" class="overly_poster"><i id="playPause_btn" class="fas fa-pause"></i></div>
-
-            <div class="range_wrapper">
-                <div class="inp_range">
-                    <input value="0" min="0" max="100" type="range" name="range" id="rangeId" step="1">
-                </div>
-                
-                <div class="dur_play_wrapper">
-                    
-                <div><i onclick="PlayPause()" id="playPause_btn2" class="fas fa-pause"></i></div>
-            
-                    <div class="duration_wrapper">
-                        <div class="left_duration">
-                            <div class="minute">0</div>
-                            <div>:</div>
-                            <div class="second">0</div>
-                        </div>
-                        <p>/</p>
-                        <div class="right_duration">
-                            <div class="minute_duration">0</div>
-                            <div>:</div>
-                            <div class="second_duration">0</div>
-                        </div>
-                    </div>
-                </div>
-            
+               <iframe id="videos" src="${video_details[i][4]}" allowfullscreen controls></iframe>
             </div>
-
-
-        </div>
     
             <div class="video_title">
                 <div class="video_heading"><h3>${video_details[i][0]}</h3></div>
@@ -353,46 +324,6 @@ video_thumb.forEach( (number,i) => {
     </div>  `
 
 
-let VideoTag = document.getElementById("videos")
-let range = document.querySelector("#rangeId");
-let minute = document.querySelector(".minute");
-let minute_duration = document.querySelector(".minute_duration");
-let second = document.querySelector(".second");
-let second_duration = document.querySelector(".second_duration");
-
-range.addEventListener("input", VidSeek);
-VideoTag.addEventListener("timeupdate", seektimeupdate)
-
-
-function seektimeupdate() {
-    let new_time = VideoTag.currentTime * (100/VideoTag.duration)
-    range.value = new_time;
-
-    minute.innerHTML = (VideoTag.currentTime/60);
-    minute_duration.innerHTML = (VideoTag.duration/60);
-
-    if ((VideoTag.currentTime%60)<10) {
-        second.innerHTML = "0" + (VideoTag.currentTime%60);
-    } else{
-        second.innerHTML = (VideoTag.currentTime%60);
-    }
-
-    if ((VideoTag.duration%60)<10) {
-        second_duration.innerHTML = "0" + (VideoTag.duration%60);
-    } else{
-        second_duration.innerHTML = (VideoTag.duration%60);
-    }
-
-}
-
-
-function VidSeek() {
-    let seekto = VideoTag.duration * (range.value/100)
-    VideoTag.currentTime = seekto;
-}
-
-
-
         let like = document.querySelector("#like")
         let unlike = document.querySelector("#unlike")
 
@@ -443,30 +374,7 @@ function VidSeek() {
 
 })
 
-
-
-function PlayPause() {
-    let VideoTag = document.querySelector("#videos")
-    let play_btn = document.querySelector("#playPause_btn")
-    let play_btn2 = document.querySelector("#playPause_btn2")
-
-
-    if(VideoTag.paused) {
-        VideoTag.play()
-        play_btn.classList.add("fa-pause");
-        play_btn.classList.remove("fa-play");
-        play_btn2.classList.add("fa-pause");
-        play_btn2.classList.remove("fa-play");
-        play_btn.setAttribute("style", "transform: translateY(50px); transition:.2s;opacity:0")
-
-    } else if (VideoTag.played) {
-        VideoTag.pause()
-        play_btn.classList.add("fa-play");
-        play_btn.classList.remove("fa-pause");
-        play_btn2.classList.add("fa-play");
-        play_btn2.classList.remove("fa-pause");
-        play_btn.setAttribute("style", "transform: translateY(0px); transition:.2s; opacity: 1;")
-    }
-
-
-}
+yt_home_logo.addEventListener("click", function() {
+    videoTag.src = "#"
+    // tab_title.innerHTML = "YouTube"
+});
