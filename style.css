@@ -313,7 +313,7 @@ span.point{
     position: relative;
 }
 
-.play_video_wrapper video{
+.play_video_wrapper iframe{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -500,7 +500,7 @@ img#like , img#unlike{
     transition: 0.2s;
   }
 
-  .overly_poster i{
+/*   .overly_poster i{
     color: #ffffff;
     font-size: 25px;
     transform: translateX(0);
@@ -596,4 +596,4 @@ i#playPause_btn2 {
 .duration_wrapper p{
     padding: 0px 3px;
     font-size: 16px;
-}
+} */
