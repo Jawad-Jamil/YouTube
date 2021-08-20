@@ -1,3 +1,8 @@
+window.addEventListener('load', ()=>{
+    document.querySelector('.preloader_wrapper').classList.add("preloading")
+})
+
+
 let video_details = [
 
     [
